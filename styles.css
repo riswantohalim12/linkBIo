@@ -1,174 +1,174 @@
 :root {
-    --title-color: #181818;
-    --text-color: #383838;
-    --bg-color: #ffd000;
+  --title-color: #181818;
+  --text-color: #383838;
+  --bg-color: #ffd000;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; /* Ensure padding and margin are included in width/height */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensure padding and margin are included in width/height */
 }
 
 body {
-    background-color: var(--bg-color);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--bg-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: calc(100vh - 40px);
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: calc(100vh - 40px);
+  padding: 20px;
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 1px solid var(--title-color);
-    object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--title-color);
+  object-fit: cover;
 }
 
 .profile-name {
-    margin-top: 10px;
-    font-size: 24px;
-    color: var(--title-color);
+  margin-top: 10px;
+  font-size: 24px;
+  color: var(--title-color);
 }
 
 .summary {
-    color: var(--text-color);
-    font-weight: 100;
-    margin-top: 15px;
-    text-align: center;
+  color: var(--text-color);
+  font-weight: 100;
+  margin-top: 15px;
+  text-align: center;
 }
 
 .about {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: center;
 }
 
 .about__title {
-    color: var(--title-color);
-    font-weight: 600;
+  color: var(--title-color);
+  font-weight: 600;
 }
 
 .about__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 10px;
-    list-style: none;
-    font-weight: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10px;
+  list-style: none;
+  font-weight: 100;
 }
 
 .about__list > li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .about__list > li > a {
-    color: var(--text-color);
-    transition: all 0.3s;
+  color: var(--text-color);
+  transition: all 0.3s;
 }
 
 .about__list > li:hover > a {
-    color: rgb(240, 102, 97);
+  color: rgb(240, 102, 97);
 }
 
 .list-links {
-    margin-top: 40px;
-    list-style: none;
-    width: 100%; /* Make the list full width */
+  margin-top: 40px;
+  list-style: none;
+  width: 100%; /* Make the list full width */
 }
 
 .list-links > li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% - 40px); /* Adjust for padding */
-    max-width: 280px; /* Limit the max width */
-    height: 50px;
-    margin: 15px auto; /* Center and add spacing */
-    border: 3px solid var(--title-color);
-    box-shadow: 5px 5px var(--title-color);
-    cursor: pointer;
-    transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40px); /* Adjust for padding */
+  max-width: 280px; /* Limit the max width */
+  height: 50px;
+  margin: 15px auto; /* Center and add spacing */
+  border: 3px solid var(--title-color);
+  box-shadow: 5px 5px var(--title-color);
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .list-links > li:nth-child(1) {
-    background-color: #a97df0;
+  background-color: #a97df0;
 }
 
 .list-links > li:nth-child(2) {
-    background-color: #61ebf0;
+  background-color: #61ebf0;
 }
 
 .list-links > li:nth-child(3) {
-    background-color: #f06661;
+  background-color: #f06661;
 }
 
 .list-links > li:nth-child(4) {
-    background-color: #8ef061;
+  background-color: #8ef061;
 }
 
 .list-links > li > a {
-    text-decoration: none;
-    color: var(--title-color);
-    font-weight: 700;
-    font-size: 20px;
+  text-decoration: none;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .list-links > li:hover {
-    transform: translate(-5px, -5px);
+  transform: translate(-5px, -5px);
 }
 
 /* Responsive Adjustments */
 @media screen and (max-width: 800px) {
-    .profile-name {
-        font-size: 22px; /* Slightly smaller for medium screens */
-    }
+  .profile-name {
+      font-size: 22px; /* Slightly smaller for medium screens */
+  }
 
-    .summary {
-        font-size: 16px; /* Adjust summary size */
-    }
+  .summary {
+      font-size: 16px; /* Adjust summary size */
+  }
 
-    .list-links > li {
-        font-size: 18px; /* Adjust font size for links */
-        height: 45px; /* Slightly smaller height */
-    }
+  .list-links > li {
+      font-size: 18px; /* Adjust font size for links */
+      height: 45px; /* Slightly smaller height */
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .profile-name {
-        font-size: 20px; /* Further reduction for smaller screens */
-    }
+  .profile-name {
+      font-size: 20px; /* Further reduction for smaller screens */
+  }
 
-    .summary {
-        font-size: 14px; /* Smaller font for summary */
-    }
+  .summary {
+      font-size: 14px; /* Smaller font for summary */
+  }
 
-    .list-links > li {
-        font-size: 16px; /* Smaller font size for links */
-        height: 40px; /* Smaller height for mobile */
-    }
+  .list-links > li {
+      font-size: 16px; /* Smaller font size for links */
+      height: 40px; /* Smaller height for mobile */
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .profile-image {
-        width: 80px;
-        height: 80px;
-    }
+  .profile-image {
+      width: 80px;
+      height: 80px;
+  }
 
-    .about__title {
-        font-size: 18px; /* Smaller title on mobile */
-    }
+  .about__title {
+      font-size: 18px; /* Smaller title on mobile */
+  }
 
-    .about__list > li {
-        font-size: 14px; /* Smaller font for about list */
-    }
+  .about__list > li {
+      font-size: 14px; /* Smaller font for about list */
+  }
 }
